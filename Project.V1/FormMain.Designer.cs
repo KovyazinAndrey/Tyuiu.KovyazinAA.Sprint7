@@ -30,9 +30,9 @@
         {
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
             PanelTools_KAA = new Panel();
             ToolsPanel_KAA = new GroupBox();
             buttonHelp_KAA = new Button();
@@ -105,11 +105,12 @@
             // 
             buttonHelp_KAA.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             buttonHelp_KAA.Cursor = Cursors.Hand;
+            buttonHelp_KAA.Image = (Image)resources.GetObject("buttonHelp_KAA.Image");
             buttonHelp_KAA.Location = new Point(1454, 26);
             buttonHelp_KAA.Name = "buttonHelp_KAA";
             buttonHelp_KAA.Size = new Size(122, 110);
             buttonHelp_KAA.TabIndex = 5;
-            buttonHelp_KAA.Text = "Помощь";
+            toolTip_KAA.SetToolTip(buttonHelp_KAA, "О программе");
             buttonHelp_KAA.UseVisualStyleBackColor = true;
             buttonHelp_KAA.Click += buttonHelp_KAA_Click;
             // 
@@ -126,20 +127,21 @@
             // 
             // textBoxSearch_KAA
             // 
-            textBoxSearch_KAA.Location = new Point(131, 55);
+            textBoxSearch_KAA.Location = new Point(163, 55);
             textBoxSearch_KAA.Name = "textBoxSearch_KAA";
-            textBoxSearch_KAA.Size = new Size(258, 27);
+            textBoxSearch_KAA.Size = new Size(226, 27);
             textBoxSearch_KAA.TabIndex = 1;
             // 
             // buttonSearchByNumber_KAA
             // 
+            buttonSearchByNumber_KAA.BackgroundImage = (Image)resources.GetObject("buttonSearchByNumber_KAA.BackgroundImage");
+            buttonSearchByNumber_KAA.BackgroundImageLayout = ImageLayout.Stretch;
             buttonSearchByNumber_KAA.Cursor = Cursors.Hand;
             buttonSearchByNumber_KAA.Enabled = false;
             buttonSearchByNumber_KAA.Location = new Point(6, 26);
             buttonSearchByNumber_KAA.Name = "buttonSearchByNumber_KAA";
-            buttonSearchByNumber_KAA.Size = new Size(119, 84);
+            buttonSearchByNumber_KAA.Size = new Size(151, 84);
             buttonSearchByNumber_KAA.TabIndex = 0;
-            buttonSearchByNumber_KAA.Text = "Поиск по номеру";
             toolTip_KAA.SetToolTip(buttonSearchByNumber_KAA, "Поиск по Гос. номеру автомобиля");
             buttonSearchByNumber_KAA.UseVisualStyleBackColor = true;
             buttonSearchByNumber_KAA.Click += buttonSearchByNumber_KAA_Click;
@@ -157,26 +159,28 @@
             // 
             // buttonAverageStatCreateDataGridView_KAA
             // 
+            buttonAverageStatCreateDataGridView_KAA.BackgroundImage = (Image)resources.GetObject("buttonAverageStatCreateDataGridView_KAA.BackgroundImage");
+            buttonAverageStatCreateDataGridView_KAA.BackgroundImageLayout = ImageLayout.Stretch;
             buttonAverageStatCreateDataGridView_KAA.Cursor = Cursors.Hand;
             buttonAverageStatCreateDataGridView_KAA.Enabled = false;
             buttonAverageStatCreateDataGridView_KAA.Location = new Point(106, 26);
             buttonAverageStatCreateDataGridView_KAA.Name = "buttonAverageStatCreateDataGridView_KAA";
             buttonAverageStatCreateDataGridView_KAA.Size = new Size(100, 84);
             buttonAverageStatCreateDataGridView_KAA.TabIndex = 1;
-            buttonAverageStatCreateDataGridView_KAA.Text = "Показатели";
             toolTip_KAA.SetToolTip(buttonAverageStatCreateDataGridView_KAA, "Различная статискика");
             buttonAverageStatCreateDataGridView_KAA.UseVisualStyleBackColor = true;
             buttonAverageStatCreateDataGridView_KAA.Click += buttonAverageStatCreateDataGridView_KAA_Click;
             // 
             // buttonChartCreate_KAA
             // 
+            buttonChartCreate_KAA.BackgroundImage = (Image)resources.GetObject("buttonChartCreate_KAA.BackgroundImage");
+            buttonChartCreate_KAA.BackgroundImageLayout = ImageLayout.Stretch;
             buttonChartCreate_KAA.Cursor = Cursors.Hand;
             buttonChartCreate_KAA.Enabled = false;
             buttonChartCreate_KAA.Location = new Point(6, 26);
             buttonChartCreate_KAA.Name = "buttonChartCreate_KAA";
             buttonChartCreate_KAA.Size = new Size(94, 84);
             buttonChartCreate_KAA.TabIndex = 0;
-            buttonChartCreate_KAA.Text = "График";
             toolTip_KAA.SetToolTip(buttonChartCreate_KAA, "Показать график ");
             buttonChartCreate_KAA.UseVisualStyleBackColor = true;
             buttonChartCreate_KAA.Click += buttonChartCreate_KAA_Click;
@@ -194,26 +198,28 @@
             // 
             // buttonSortBrand_KAA
             // 
+            buttonSortBrand_KAA.BackgroundImage = (Image)resources.GetObject("buttonSortBrand_KAA.BackgroundImage");
+            buttonSortBrand_KAA.BackgroundImageLayout = ImageLayout.Stretch;
             buttonSortBrand_KAA.Cursor = Cursors.Hand;
             buttonSortBrand_KAA.Enabled = false;
             buttonSortBrand_KAA.Location = new Point(106, 26);
             buttonSortBrand_KAA.Name = "buttonSortBrand_KAA";
             buttonSortBrand_KAA.Size = new Size(94, 84);
             buttonSortBrand_KAA.TabIndex = 1;
-            buttonSortBrand_KAA.Text = "Марка";
             toolTip_KAA.SetToolTip(buttonSortBrand_KAA, "Сортировка таблицы по марке");
             buttonSortBrand_KAA.UseVisualStyleBackColor = true;
             buttonSortBrand_KAA.Click += buttonSortBrand_KAA_Click;
             // 
             // buttonSortColor_KAA
             // 
+            buttonSortColor_KAA.BackgroundImage = (Image)resources.GetObject("buttonSortColor_KAA.BackgroundImage");
+            buttonSortColor_KAA.BackgroundImageLayout = ImageLayout.Stretch;
             buttonSortColor_KAA.Cursor = Cursors.Hand;
             buttonSortColor_KAA.Enabled = false;
             buttonSortColor_KAA.Location = new Point(6, 26);
             buttonSortColor_KAA.Name = "buttonSortColor_KAA";
             buttonSortColor_KAA.Size = new Size(94, 84);
             buttonSortColor_KAA.TabIndex = 0;
-            buttonSortColor_KAA.Text = "Цвет";
             toolTip_KAA.SetToolTip(buttonSortColor_KAA, "Сортировка таблицы по цвету");
             buttonSortColor_KAA.UseVisualStyleBackColor = true;
             buttonSortColor_KAA.Click += buttonSortColor_KAA_Click;
@@ -313,17 +319,17 @@
             // 
             // chartStats_KAA
             // 
-            chartArea1.Name = "ChartArea1";
-            chartStats_KAA.ChartAreas.Add(chartArea1);
+            chartArea3.Name = "ChartArea1";
+            chartStats_KAA.ChartAreas.Add(chartArea3);
             chartStats_KAA.Dock = DockStyle.Fill;
-            legend1.Name = "Legend1";
-            chartStats_KAA.Legends.Add(legend1);
+            legend3.Name = "Legend1";
+            chartStats_KAA.Legends.Add(legend3);
             chartStats_KAA.Location = new Point(0, 0);
             chartStats_KAA.Name = "chartStats_KAA";
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            chartStats_KAA.Series.Add(series1);
+            series3.ChartArea = "ChartArea1";
+            series3.Legend = "Legend1";
+            series3.Name = "Series1";
+            chartStats_KAA.Series.Add(series3);
             chartStats_KAA.Size = new Size(374, 254);
             chartStats_KAA.TabIndex = 0;
             chartStats_KAA.Text = "chart1";

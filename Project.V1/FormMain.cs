@@ -104,7 +104,7 @@ namespace Project.V1
                 {
                     for (int j = 0; j < cols; j++)
                     {
-                        if (dataGridViewOutputData_KAA.Rows[i].Cells[j].Value.ToString() == "") break;
+                        if (dataGridViewOutputData_KAA.Rows[i].Cells[j].Value == null) break;
                         if (j != cols - 1)
                         {
                             str += dataGridViewOutputData_KAA.Rows[i].Cells[j].Value + ";";
